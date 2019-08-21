@@ -1,0 +1,27 @@
+{
+    "name": "apreiml/laravel-enforce-https",
+    "description": "Enforce https for route helpers by providing an environment flag.",
+    "type": "library",
+    "require": {
+        "illuminate/support": "^5.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Armin Preiml",
+            "email": "apreiml@strohwolke.at"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Apreiml\\EnforceHttps\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Apreiml\\EnforceHttps\\EnforceHttpsServiceProvider"
+            ]
+        }
+    }
+}
